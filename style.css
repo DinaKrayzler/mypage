@@ -4,7 +4,8 @@ p{
     background-color: lawngreen;
     border-color: aqua;
 }
-img {
-  max-width: 100%;
+
+#schaf{
+  max-width: 50%;
   height: auto;
 }
