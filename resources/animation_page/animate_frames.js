@@ -5,7 +5,7 @@ const frames = [];
 // Preload frames from "frames_2" folder
 for (let i = startFrame; i <= endFrame; i++) {
     const img = new Image();
-    img.src = `frames/${i}.jpg`;
+    img.src = `./resources/animation_page/frames/${i}.jpg`;
     frames.push(img);
 }
 
