@@ -6,13 +6,13 @@
   width: 900px;
   /* Fixed width of the container */
 
-  height: 600px;
+  height: 850px;
   /* Fixed height → must match your image proportions */
 
   margin: 60px auto;
   /* 60px space top/bottom, auto left/right → centers horizontally */
 
-  background-image: url("images/folder.jpg");
+  background-image: url("./images/folderbrown.png");
   /* Your folder image */
 
   background-size: cover;
@@ -28,7 +28,7 @@
   padding: 10px 16px;
   /* Space inside the button → makes it clickable and readable */
 
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.15);
   /* Slightly transparent white → readable on top of image */
 
   border-radius: 6px;
@@ -44,22 +44,23 @@
   /* Text size */
 }
 .about {
-  top: 40px;
+  top: 120px;
   /* Distance from top edge of container */
 
-  left: 120px;
+  left: 150px;
   /* Distance from left edge */
 }
 .work {
-  top: 40px;
+  top: 60px;
   /* Same vertical alignment as "About" */
 
-  left: 300px;
+  left: 350px;
   /* Placed further right */
 }
 
 body {
  cursor: url("./images/click.png") 0 0, auto;
+ background: rgb(201, 209, 243) url("img_tree.gif") no-repeat fixed center;
 }
 
 
