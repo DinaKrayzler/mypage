@@ -101,3 +101,20 @@ p{
  display: flex;
  justify-content: center;
 }
+
+#frame_container{
+
+
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
+
+#frame{
+
+    height:100vh;
+
+}
