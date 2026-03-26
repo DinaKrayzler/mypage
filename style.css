@@ -3,16 +3,16 @@
   /* Makes this the reference point for absolutely positioned children
      (the buttons will be placed relative to this container) */
 
-  width: 90%;
+  width: 900px;
   /* Fixed width of the container */
 
-  max-width: 900px;
+  height: 600px;
   /* Fixed height → must match your image proportions */
 
   margin: 60px auto;
   /* 60px space top/bottom, auto left/right → centers horizontally */
 
-  background-image: url("images/folderbrown.png");
+  background-image: url("images/folder.jpg");
   /* Your folder image */
 
   background-size: cover;
