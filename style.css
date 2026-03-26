@@ -1,4 +1,63 @@
-/*
+.folder-bg {
+  position: relative;
+  /* Makes this the reference point for absolutely positioned children
+     (the buttons will be placed relative to this container) */
+
+  width: 900px;
+  /* Fixed width of the container */
+
+  height: 600px;
+  /* Fixed height → must match your image proportions */
+
+  margin: 60px auto;
+  /* 60px space top/bottom, auto left/right → centers horizontally */
+
+  background-image: url("images/folderbrown.png");
+  /* Your folder image */
+
+  background-size: cover;
+  /* Scales image so it fills the container (may crop slightly) */
+
+  background-position: center;
+  /* Keeps image centered when scaling */
+}
+.tab {
+  position: absolute;
+  /* Allows placing the element freely inside .folder-bg */
+
+  padding: 10px 16px;
+  /* Space inside the button → makes it clickable and readable */
+
+  background: rgba(255,255,255,0.85);
+  /* Slightly transparent white → readable on top of image */
+
+  border-radius: 6px;
+  /* Soft rounded corners */
+
+  text-decoration: none;
+  /* Removes underline from link */
+
+  color: black;
+  /* Text color */
+
+  font-size: 14px;
+  /* Text size */
+}
+.about {
+  top: 40px;
+  /* Distance from top edge of container */
+
+  left: 120px;
+  /* Distance from left edge */
+}
+.work {
+  top: 40px;
+  /* Same vertical alignment as "About" */
+
+  left: 300px;
+  /* Placed further right */
+}
+
 body {
  cursor: url("./images/click.png") 0 0, auto;
 }
@@ -40,4 +99,4 @@ p{
 #container{
  display: flex;
  justify-content: center;
-}/
+}
