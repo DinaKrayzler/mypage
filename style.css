@@ -1,13 +1,32 @@
+body {
+  cursor: url("./images/click.png") 0 0, auto;
+}
+
+a, button, .button {
+  cursor: url("./images/click.png") 0 0, pointer;
+}
+
+.button{
+  width:10vw;
+}
+
+
 p{
     color: rgb(101, 36, 214);
     font-size:10vh ;
     background-color: lawngreen;
     border-color: aqua;
+    font-family: myfont;
 }
 
 #schafe{
   max-width: 50%;
   height: auto;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(./fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
 }
 
 #container{
