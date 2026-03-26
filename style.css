@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  background: #d9d2c3;
+  background: #a72005;
   color: #2f2419;
 }
 
@@ -40,6 +40,23 @@ img {
 }
 
 .tab {
+  width: 220px;            /* overall width of the tab */
+  height: 90px;            /* height of the visible tab */
+
+  background: #e6c3a1;     /* base color (paper/cardboard) */
+
+  border-radius: 12px 12px 0 0;
+  /* rounds ONLY the top corners:
+     top-left = 12px
+     top-right = 12px
+     bottom corners = 0 (flat, so it sits on folder) */
+
+  position: relative;
+  /* IMPORTANT: allows the ::before element to position itself
+     relative to THIS tab (not the whole page) */
+}
+
+/*.tab {
   display: inline-block;
   padding: 12px 20px;
   background: #c8a06b;
@@ -48,6 +65,50 @@ img {
   border-radius: 8px 8px 0 0;
   border: 1px solid rgba(0, 0, 0, 0.08);
   font-size: 0.95rem;
+}*/
+
+.tab {
+  box-shadow:
+    0 6px 12px rgba(0,0,0,0.15),
+    /* outer shadow → lifts tab above background */
+
+    inset 0 -2px 4px rgba(0,0,0,0.1);
+    /* inner shadow → makes bottom edge feel pressed */
+}
+
+.tab {
+  background: linear-gradient(
+    to bottom,
+    #f2d2b5,   /* lighter top → catches “light” */
+    #e1b995    /* darker bottom → adds depth */
+  );
+}
+
+.tab::before {
+  content: "";
+  /* required for pseudo-elements to exist */
+
+  position: absolute;
+  /* lets us place this shape anywhere inside the tab */
+
+  bottom: -20px;
+  /* pushes it DOWN outside the tab
+     → creates that “cut-out” / curved dip */
+
+  left: 40px;
+  /* horizontal position of the curve */
+
+  width: 120px;
+  height: 40px;
+  /* size of the curve shape */
+
+  background: #e6c3a1;
+  /* SAME color as tab → looks like one shape */
+
+  border-radius: 0 0 40px 40px;
+  /* this creates the curved bottom:
+     top corners = 0 (flat)
+     bottom corners = rounded → gives that soft dip */
 }
 
 .tab:hover {
