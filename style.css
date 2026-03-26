@@ -1,10 +1,14 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+ font-family: myfont;
+ src: url(./fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: myfont;
   background: #a72005;
   color: #2f2419;
 }

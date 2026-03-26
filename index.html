@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dina Krayzler – About</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dina Krayzler — About</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <div class="folder">
+  <main class="site-shell">
+    <section class="folder-scene">
 
-      <nav class="tabs">
-        <a class="tab active" href="index.html">About Me</a>
-        <a class="tab" href="work.html">Work</a>
+      <nav class="folder-tabs" aria-label="Main navigation">
+        <a class="folder-tab active" href="index.html">About Me</a>
+        <a class="folder-tab" href="work.html">Work</a>
       </nav>
 
-      <div class="folder-content">
-        <section class="about-layout">
-          <div class="paper main-paper">
+      <div class="folder">
+        <div class="folder-top-edge"></div>
+
+        <div class="folder-inner">
+          <section class="paper paper-main">
+            <p class="eyebrow">Artist folder / about</p>
             <h1>Dina Krayzler</h1>
-            <p class="intro">
-              I work across illustration, sketches, painting, photography and print.
-              I am interested in visual storytelling, mixed media, observation, humor,
-              and process.
+
+            <p class="lead">
+              I work across illustration, painting, sketches, print, and image-based storytelling.
+              I am interested in observation, mixed media, visual notes, process, and small narrative fragments.
             </p>
 
             <p>
-              This portfolio is shaped like a folder of collected materials:
-              finished works, fragments, notes, sketches, and references.
+              This website is structured like a cardboard folder with collected materials:
+              finished works, notes, sketches, and references. I wanted it to feel less like a polished showroom
+              and more like an artist’s working archive.
             </p>
-          </div>
 
-          <div class="paper small-note rotate-left">
-            <h2>Note</h2>
             <p>
-              Interested in editorial illustration, visual storytelling,
-              mixed media, and experimental image-making.
+              My practice moves between analogue and digital media. I am especially drawn to visual storytelling,
+              humorous and empathetic observation, tactile surfaces, and images that carry traces of thinking.
             </p>
-          </div>
 
-          <div class="paper image-card rotate-right">
-            <img src="images/profile.jpg" alt="Portrait or studio image">
-          </div>
-        </section>
+            <div class="pin-note">
+              <div class="pin"></div>
+              <p>
+                Interested in editorial illustration, mixed media, visual essays, process-heavy work, and selected commissions.
+              </p>
+            </div>
+          </section>
+
+          <aside class="side-column">
+            <section class="paper paper-note tilt-left">
+              <p class="note-label">small note</p>
+              <h2>About this site</h2>
+              <p>
+                Built in HTML and CSS as an experiment in turning a physical folder metaphor into a website.
+              </p>
+            </section>
+
+            <section class="paper paper-polaroid tilt-right">
+              <div class="image-placeholder portrait-placeholder">
+                <span>portrait / studio image</span>
+              </div>
+              <p class="caption">You can replace this with a portrait, studio photo, or detail of your workspace.</p>
+            </section>
+          </aside>
+        </div>
       </div>
-
-    </div>
-  </div>
+    </section>
+  </main>
 </body>
 </html>
