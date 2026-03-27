@@ -44,13 +44,7 @@
   font-size: 14px;
   /* Text size */
 }
-.about {
-  top: 120px;
-  /* Distance from top edge of container */
 
-  left: 150px;
-  /* Distance from left edge */
-}
 .works {
   top: 60px;
   /* Same vertical alignment as "About" */
