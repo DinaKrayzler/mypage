@@ -102,19 +102,21 @@ p{
  justify-content: center;
 }
 
-#frame_container{
-
-
-    width:100vw;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-
-
+#frame_container {
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  width: 450px;
+  height: 450px;
+  z-index: 2;
 }
 
-#frame{
-
-    height:100vh;
-
+#frame {
+  max-width: 100%;   /* adjust depending on layout */
+  max-height: 100%;
+  object-fit: contain;
 }
+
+/* #frame{ */
+
+    /* height:100vh; */
