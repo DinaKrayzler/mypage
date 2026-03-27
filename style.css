@@ -3,10 +3,10 @@
   /* Makes this the reference point for absolutely positioned children
      (the buttons will be placed relative to this container) */
 
-  width: 900px;
+  width: 600;
   /* Fixed width of the container */
 
-  height: 850px;
+  height: 100%;
   /* Fixed height → must match your image proportions */
 
   margin: 60px auto;
