@@ -3,10 +3,10 @@
   /* Makes this the reference point for absolutely positioned children
      (the buttons will be placed relative to this container) */
 
-  width: 600;
+  width: 800px;
   /* Fixed width of the container */
 
-  height: 100%;
+  height: 683px;
   /* Fixed height → must match your image proportions */
 
   margin: 60px auto;
@@ -21,6 +21,7 @@
   background-position: center;
   /* Keeps image centered when scaling */
 }
+
 .tab {
   position: absolute;
   /* Allows placing the element freely inside .folder-bg */
@@ -50,11 +51,19 @@
   left: 150px;
   /* Distance from left edge */
 }
-.work {
+.works {
   top: 60px;
   /* Same vertical alignment as "About" */
 
-  left: 350px;
+  left: 310px;
+  /* Placed further right */
+}
+
+.photography {
+  top: 30px;
+  /* Same vertical alignment as "About" */
+
+  left: 465px;
   /* Placed further right */
 }
 
@@ -104,17 +113,19 @@ p{
 
 #frame_container {
   position: absolute;
-  top: 200px;
+  top: 180px;
   left: 120px;
-  width: 450px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   z-index: 2;
+  
 }
 
 #frame {
   max-width: 100%;   /* adjust depending on layout */
   max-height: 100%;
   object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.637);
 }
 
 /* #frame{ */
